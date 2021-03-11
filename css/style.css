@@ -1,0 +1,1565 @@
+@font-face {
+  font-family: "aquarelle";
+  font-display: swap;
+  src: url("../fonts/aquarelle.woff") format("woff"), url("../fonts/aquarelle.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prata";
+  font-display: swap;
+  src: url("../fonts/Prata-Regular.woff") format("woff"), url("../fonts/Prata-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Prata;
+  font-size: 20px;
+  line-height: 1.3;
+  color: black;
+  font-size: calc(13px + 7 * ((100vw - 320px) / 1080));
+}
+
+.no-webp .wrapper {
+  background: url(../img/back11.jpg) 50% 50%/cover no-repeat; }
+
+.wrapper {
+  max-width: 1600px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.change-lang {
+  position: absolute;
+  opacity: 0.7;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5em auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lng-1 {
+  width: 15em;
+  margin: 10px 3% 0 7%;
+  overflow: hidden;
+  -webkit-animation-name: rockDance1;
+          animation-name: rockDance1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: steps(25, start);
+          animation-timing-function: steps(25, start);
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance1 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 15em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance1 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 15em;
+    opacity: 1;
+  }
+}
+
+.lng-2 {
+  width: 16em;
+  overflow: hidden;
+  margin: 10px 3% 0 7%;
+  -webkit-animation-name: rockDance2;
+          animation-name: rockDance2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: steps(25, start);
+          animation-timing-function: steps(25, start);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-3 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance3;
+          animation-name: rockDance3;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-4 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance4;
+          animation-name: rockDance4;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance4 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance4 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-5 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance5;
+          animation-name: rockDance5;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance5 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance5 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-6 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance6;
+          animation-name: rockDance6;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance6 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance6 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-7 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance7;
+          animation-name: rockDance7;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance7 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance7 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-8 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance8;
+          animation-name: rockDance8;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 26s;
+          animation-delay: 26s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance8 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance8 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-9 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance9;
+          animation-name: rockDance9;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance9 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance9 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-10 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance10;
+          animation-name: rockDance10;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance10 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance10 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-11 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance11;
+          animation-name: rockDance11;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 32s;
+          animation-delay: 32s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance11 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance11 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-12 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance12;
+          animation-name: rockDance12;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 34s;
+          animation-delay: 34s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance12 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance12 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-13 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance13;
+          animation-name: rockDance13;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 36s;
+          animation-delay: 36s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance13 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance13 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-14 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance14;
+          animation-name: rockDance14;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 38s;
+          animation-delay: 38s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance14 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance14 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-15 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance15;
+          animation-name: rockDance15;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 40s;
+          animation-delay: 40s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance15 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance15 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-16 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance16;
+          animation-name: rockDance16;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 42s;
+          animation-delay: 42s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance16 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance16 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-17 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance17;
+          animation-name: rockDance17;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 44s;
+          animation-delay: 44s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance17 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance17 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-18 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance18;
+          animation-name: rockDance18;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 46s;
+          animation-delay: 46s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance18 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance18 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-19 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance19;
+          animation-name: rockDance19;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 48s;
+          animation-delay: 48s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance19 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance19 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-20 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance20;
+          animation-name: rockDance20;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 50s;
+          animation-delay: 50s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance20 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance20 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-21 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance21;
+          animation-name: rockDance21;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 52s;
+          animation-delay: 52s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance21 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance21 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-22 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance22;
+          animation-name: rockDance22;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 54s;
+          animation-delay: 54s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance22 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance22 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-23 {
+  width: 17em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance23;
+          animation-name: rockDance23;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 56s;
+          animation-delay: 56s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance23 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 17em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance23 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 17em;
+    opacity: 1;
+  }
+}
+
+.lng-24 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance24;
+          animation-name: rockDance24;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 58s;
+          animation-delay: 58s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance24 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance24 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-25 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance25;
+          animation-name: rockDance25;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 60s;
+          animation-delay: 60s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance25 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance25 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-26 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance26;
+          animation-name: rockDance26;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 62s;
+          animation-delay: 62s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes rockDance26 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance26 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+.lng-27 {
+  width: 16em;
+  overflow: hidden;
+  -webkit-animation-name: rockDance27;
+          animation-name: rockDance27;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: steps(20, start);
+          animation-timing-function: steps(20, start);
+  -webkit-animation-delay: 65s;
+          animation-delay: 65s;
+  white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  color: red;
+  padding-top: 5px;
+}
+
+@-webkit-keyframes rockDance27 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@keyframes rockDance27 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 16em;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1370px) {
+  .lng-1,
+  .lng-2,
+  .lng-27,
+  .lng-26,
+  .lng-25,
+  .lng-24,
+  .lng-23,
+  .lng-22,
+  .lng-21,
+  .lng-20,
+  .lng-19,
+  .lng-18,
+  .lng-17,
+  .lng-16,
+  .lng-15,
+  .lng-14,
+  .lng-13,
+  .lng-12,
+  .lng-11,
+  .lng-10,
+  .lng-9,
+  .lng-8,
+  .lng-7,
+  .lng-6,
+  .lng-5,
+  .lng-4,
+  .lng-3 {
+    margin-left: 25%;
+  }
+
+  .lng-5 {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lng-1,
+  .lng-2,
+  .lng-27,
+  .lng-26,
+  .lng-25,
+  .lng-24,
+  .lng-23,
+  .lng-22,
+  .lng-21,
+  .lng-20,
+  .lng-19,
+  .lng-18,
+  .lng-17,
+  .lng-16,
+  .lng-15,
+  .lng-14,
+  .lng-13,
+  .lng-12,
+  .lng-11,
+  .lng-10,
+  .lng-9,
+  .lng-8,
+  .lng-7,
+  .lng-6,
+  .lng-5,
+  .lng-4,
+  .lng-3 {
+    margin-left: 15%;
+  }
+
+  .lng-5 {
+    padding-top: 10px;
+  }
+
+  .lng-27 {
+    padding-top: 30px;
+  }
+}
+
+.webp .wrapper { background: url(../img/back11.webp) 50% 50%/cover no-repeat; }
